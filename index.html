@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OES">
+
+	<title>Online Examination System</title>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
+  	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<script src="myApp.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+	<style>
+		body{
+			padding-top: 40px;
+		}
+	</style>
+</head>
+
+	
+
+<body data-spy="scroll" data-target="#my-navbar" ng-controller="myCtrl">
+
+  	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="#" class="navbar-brand">OES</a>
+			</div>
+
+			<!-- Navbar Header-->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				
+			<a href="" class="btn btn-success navbar-btn navbar-left">Sign Up</a>
+			<a href="" class="btn btn-success navbar-btn navbar-right">Login</a>
+
+				<ul class="nav navbar-nav">
+					<li><a href="#feedback">Services</a>
+					<li><a href="#features">Features</a> 
+					<li><a href="#faq">FAQ</a> 
+					<li><a href="#contact">Contact Us</a> 
+				</ul>
+			</div>
+		</div><!-- End Container-->
+	</nav><!-- End navbar -->
+
+
+	<div id="main">
+		<div ng-view></div>
+	</div>
+	
+
+
+
+	
+
+
+
+	<!--footer-->
+  	<footer>
+  		<hr>
+  		<div class="container text-center">
+  			<h3>Subscribe for more free apps</h3>
+  			<p>Enter your name and e-mail</p>
+
+			<form action="" class="form-inline">
+				<div class="form-group">
+					<lebel for="Name">Name</lebel>
+					<input type="text" class="form-control" id="name" placeholder="Your Name">
+				</div>
+				<div class="form-group">
+					<lebel for="email">e-mail</lebel>
+					<input type="email" class="form-control" id="email" placeholder="Your e-mail">
+				</div>
+				<button type="submit" class="btn btn-success">Subscribe</button>
+				<hr>
+			</form>
+			
+			<hr>
+
+			<ul class="list-inline">
+				<li><a href="">Twitter</a></li>
+				<li><a href="">Facebook</a></li>
+				<li><a href="">YouTube</a></li>
+			</ul>
+			<p>&copy; Owlette @ 2016</p>
+  		</div>
+  	</footer>
+
+
+</body>	
+</html>
